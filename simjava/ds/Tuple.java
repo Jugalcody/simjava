@@ -1,6 +1,6 @@
-package simjava.tuple;
+package simjava.ds;
 import java.util.Scanner;
-public class CreateTuple{
+public class Tuple{
 
 public int[] createIntTuple(int size){
 int[] arr=new int[size];
