@@ -9,39 +9,12 @@ double[] listDouble=new double[1];
 String[] listString=new String[1];
 
 
-public int[] listInt(){
-return listInt;
-}
-
-
-public short[] listShort(){
-return listShort;
-}
-
-
-
-public byte[] listByte(){
-return listByte;
-}
-
-
-
-public float[] listFloat(){
-return listFloat;
-}
-
-
-
-public double[] listDouble(){
-return listDouble;
-}
-
-
-
-public String[] listString(){
-return listString;
-}
-
+public int[] listInt(){ return listInt;}
+public float[] listFloat() {return listFloat;}
+public double[] listDouble() {return listDouble;}
+public String[] listString() {return listString;}
+public short[] listShort() {return listShort;}
+public byte[] listByte() {return listByte;}
 
 public int[] createIntList(int size){
 listInt=new int[size];
@@ -169,7 +142,7 @@ return listDouble;
 
 
 
-public void printIntList(){
+public String getIntList(){
 String s="[";
 
 for(int i=0;i<listInt.length;i++){
@@ -180,11 +153,10 @@ s+=listInt[i];
 }
 }
 s+="]";
-System.out.println(s);
-
+return s;
 }
 
-public void printStringList(){
+public String getStringList(){
 String s="[";
 
 for(int i=0;i<listString.length;i++){
@@ -195,11 +167,10 @@ s+=listString[i];
 }
 }
 s+="]";
-System.out.println(s);
-
+return s;
 }
 
-public void printByteList(){
+public String getByteList(){
 String s="[";
 
 for(int i=0;i<listByte.length;i++){
@@ -210,12 +181,11 @@ s+=listByte[i];
 }
 }
 s+="]";
-System.out.println(s);
-
+return s;
 }
 
 
-public void printShortList(){
+public String getShortList(){
 String s="[";
 
 for(int i=0;i<listShort.length;i++){
@@ -226,11 +196,11 @@ s+=listShort[i];
 }
 }
 s+="]";
-System.out.println(s);
 
+return s;
 }
 
-public void printDoubleList(){
+public String getDoubleList(){
 String s="[";
 
 for(int i=0;i<listDouble.length;i++){
@@ -241,10 +211,10 @@ s+=listDouble[i];
 }
 }
 s+="]";
-System.out.println(s);
-
+return s;
 }
-public void printFloatList(){
+
+public String getFloatList(){
 String s="[";
 
 for(int i=0;i<listFloat.length;i++){
@@ -255,8 +225,7 @@ s+=listFloat[i];
 }
 }
 s+="]";
-System.out.println( s);
-
+return s;
 }
 
 // operation 
